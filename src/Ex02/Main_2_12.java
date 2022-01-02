@@ -24,13 +24,12 @@ class Main_2_12 {
 				for(int k=0; k<m; k++){
 					int pi=0, pj=0;
 					for(int s=0; s<n; s++){
-						if(arr[k][s]==
-								i) pi=s;
-						if(arr[k][s]==j) pj=s;
+						if(arr[k][s]==i) pi=s; // i의 등수
+						if(arr[k][s]==j) pj=s; // j의 등수
 					}
-					if(pi<pj) cnt++;
+					if(pi<pj) cnt++; // i가 j보다 등수가 앞서면 cnt++
 				}
-				if(cnt==m){
+				if(cnt==m){ // m번의 경우에서 모두 i의 등수가 앞서면 cnt == m
 					answer++;
 					//System.out.println(i+" "+j);
 				}
